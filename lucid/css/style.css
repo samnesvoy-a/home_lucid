@@ -234,10 +234,6 @@ float: right;
 /*Section====
 ===========================*/
 
-section {
-    margin-bottom: 75px;
-}
-
 section .container {
     max-width: 1140px;
 
@@ -298,6 +294,7 @@ section .item {
 
 
     margin-top: 72px;
+    margin-bottom: 75px;
 
     padding: 0 20px;
 }
@@ -360,7 +357,14 @@ section .banner_inner {
     margin-left: 24px;
 }
 
+.banner_inner .right-item ul li{
+    padding-bottom: 20px;
+}
 
+.banner_inner .right-item ul li i{
+    color: #0d93d7;
+    width: 30px;
+}
 
 section .banner-wrapper {
     background: #f2f2f2;
@@ -396,10 +400,64 @@ section .right-item {
     width: 62%;
 }
 
+
+/*owl
+==============*/
+
+section .intro-owl {
+    background: url("../images/plans-bg.png") center no-repeat;
+    background-size: cover;
+}
+
+
+section .item-plans {
+    margin-top: 80px;
+    margin-bottom: 180px;
+    padding-bottom: 180px;
+
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    color: #ffffff;
+}
+
+section .intro-owl h2{
+    color: #ffffff;
+}
+
+section .item-plans-left {
+    float: left;
+    width: 50%;
+
+    text-align: left;
+
+}
+
+
+section .item-plans-right {
+    float: right;
+    width: 50%;
+
+    text-align: left;
+
+}
+
+section .img-title {
+    margin-top: 15px;
+}
+
+section .img-title .img-plan {
+    display: inline-block;
+}
+
+section .img-title p{
+    display: inline-block;
+
+    font-size: 16px;
+}
+
+/*======*/
 section .offer {
     background: #15141a;
-
-
 }
 
 section .offer .title {
@@ -535,29 +593,129 @@ section .section-contact {
 
 section .section-contact .item{
     margin-top: 150px;
+    margin-bottom: 350px;
     position: relative;
 
     float: left;
     width: 33.33333%;
+
+    text-align: center;
 }
 
-section .section-contact .item:before{
-    content: "\f3cd";
+section .section-contact .item .phone:before{
+     content: "\f3cd";
+     font-family: "Font Awesome 5 Free";
+     font-size: 40px;
+     font-weight: bold;
+     color: #0d93d7;
+
+     display: block;
+
+    padding-bottom: 30px;
+ }
+
+section .section-contact .item .geo:before{
+    content: "\f3c5";
     font-family: "Font Awesome 5 Free";
     font-size: 40px;
     font-weight: bold;
-    color: red;
+    color: #0d93d7;
 
-
-    position: absolute;
     display: block;
 
-    top: -60px;
-    left: 175px;
+    padding-bottom: 30px;
 }
 
+section .section-contact .item .mail:before{
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-size: 40px;
+    font-weight: bold;
+    color: #0d93d7;
 
+    display: block;
 
+    padding-bottom: 30px;
+}
 
+/* Form ======
+====================*/
 
+section .form-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
+section .form-holder {
+    background: #15141a;
+    width: 750px;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+section .form-holder .left-form{
+    float: left;
+    width: 50%;
+}
+
+section .form-holder .right-form{
+    float: right;
+    width: 50%;
+}
+
+section .img-map img{
+    width: 100%;
+    background-size: cover;
+}
+
+/*footer==========
+==========================*/
+footer {
+    background: #15141a;
+}
+
+footer .footer-inner {
+   text-align: center;
+}
+
+footer .footer-item{
+    display: inline-block;
+    margin: 55px 0 30px 0;
+}
+
+footer .footer-item .item{
+    display: inline-block;
+}
+
+footer .footer-item .item i{
+    margin: 0 15px;
+    color: #444348;
+}
+
+footer .footer-item .item i:hover{
+    color: #008ed6;
+}
+
+/*footer .footer-item  .item-1:before{*/
+/*    content: "\f1b4";*/
+/*    font-family: "Font Awesome 5 Free";*/
+/*    font-size: 20px;*/
+/*    font-weight: bold;*/
+/*    color: red;*/
+
+/*    display: block;*/
+
+/*    padding-bottom: 30px;*/
+/*}*/
+
+footer .footer-title{
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    color: #444348;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    padding-bottom: 45px;
+}
