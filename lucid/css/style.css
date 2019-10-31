@@ -644,6 +644,8 @@ section .section-contact .item .mail:before{
 section .form-wrapper {
     max-width: 1170px;
     margin: 0 auto;
+
+    position: relative;
 }
 
 section .form-holder {
